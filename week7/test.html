@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.relative {
+            position: relative;
+            width: 50%;
+            height: 200px;
+            border: 3px solid green;
+            margin: auto;
+        }
+
+        div.box1 {
+            position: absolute;
+            bottom: 20px;
+            left: -80px;
+            width: 120px;
+            border: 3px solid red;
+        }
+
+        div.box2 {
+            position: absolute;
+            top: 20px;
+            right: -80px;
+            width: 120px;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">
+        <div class="box1">First box</div>
+        <div class="box2">Second box</div>
+    </div>
+</body>
+
+</html>
