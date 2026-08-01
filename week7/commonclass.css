@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&family=Syne+Mono&display=swap');
+
+.container {
+    max-width: 1440px;
+    padding: 30px 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
