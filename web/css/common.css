@@ -47,3 +47,12 @@ header nav a:hover {
     color: var(--title);
     transition: 0.3s;
 }
+
+.hero-section-title {
+    font-family: "Roboto Slab Light", serif;
+    font-size: 48px;
+    line-height: 67.2px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: var(--title);
+}
