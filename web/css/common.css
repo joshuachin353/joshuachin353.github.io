@@ -1,11 +1,49 @@
 :root {
     --background-color: #000000;
+    --title: #ffffff;
+    --title-span: #917852;
+    --body-text: #afafaf;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 body {
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 30px 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav a {
+    display: flex;
+    flex-direction: row;
+    color: var(--title-span);
+    text-decoration: none;
+    font-family: "Roboto Slab", serif;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    color: var(--title);
+    transition: 0.3s;
 }
