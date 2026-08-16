@@ -19,16 +19,22 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
-    position: relative;
+    position: absolute;
 }
 
 .logo {
     display: flex;
     flex-direction: column;
-    max-width: 175px;
-    width: 100%;
-    justify-content: center;
-    position: relative;
+    max-width: 100%;
+    position: absolute;
+    align-content: center;
+    padding: 30px 30px;
+    left: 40%;
+    top: 200%
+}
+
+.logo img {
+    width: 175px;
 }
 
 .container {
