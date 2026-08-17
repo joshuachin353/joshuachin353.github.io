@@ -96,3 +96,14 @@ header nav a:hover {
     color: var(--title);
     margin: 0;
 }
+
+.hero-subtext p {
+    font-family: "Roboto Condensed", serif;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--body-text);
+    align-self: center;
+}

@@ -53,3 +53,9 @@ hr {
     width: 200px;
     border-color: var(--title-span);
 }
+
+.hero-subtext {
+    width: 557px;
+    height: 102px;
+    align-self: center;
+}
