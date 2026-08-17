@@ -16,11 +16,14 @@
     --ourstory-background: #121212;
 }
 
-body {
-    background-color: var(--background-color);
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 header {
