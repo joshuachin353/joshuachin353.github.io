@@ -41,12 +41,11 @@
 }
 
 .hero-section-title {
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     position: relative;
     margin: 30px 30px;
-    border-color: var(--title-span);
 }
 
 hr {
@@ -55,6 +54,7 @@ hr {
 }
 
 .hero-subtext {
+    display: flex;
     width: 557px;
     height: 102px;
     align-self: center;
@@ -70,5 +70,16 @@ hr {
 }
 
 .craft-beer img {
+    width: 100%;
+}
+
+.testimonial-title {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -2200px;
+}
+
+.testimonial-title img {
     width: 100%;
 }

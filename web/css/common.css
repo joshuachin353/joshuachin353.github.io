@@ -57,12 +57,8 @@ header nav a:hover {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: -1200px;
     height: 337px;
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
     margin: 30px 30px;
-    border-color: var(--title-span);
     padding: 30px 30px;
 
 }
@@ -124,4 +120,14 @@ header nav a:hover {
     height: 650px;
     max-width: 100%;
     object-fit: cover;
+}
+
+.hero-subtext {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--body-text);
 }
