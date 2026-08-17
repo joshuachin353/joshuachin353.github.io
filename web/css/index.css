@@ -143,9 +143,36 @@
 .testimonial-quote span {
     font-family: "Roboto Condensed", serif;
     font-size: 18px;
-    line-height: 34px;
+    line-height: 30px;
     letter-spacing: 2px;
     font-style: italic;
     font-weight: 300;
     color: var(--title);
+}
+
+.testimonial-subtitle {
+    display: flex;
+    position: relative;
+    align-self: center;
+    gap: 5px;
+    margin: 20px;
+}
+
+.testimonial-subtitle span {
+    font-family: "Roboto Condensed", serif;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: var(--title-span);
+}
+
+.testimonial-subtitle a {
+    font-family: "Roboto Condensed", serif;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: var(--title-span);
+    text-decoration: none;
 }
