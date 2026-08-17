@@ -95,6 +95,7 @@
 
 .testimonial-title {
     display: flex;
+    flex-direction: column;
     align-self: center;
     position: absolute;
 }
@@ -115,4 +116,17 @@
     align-self: center;
     width: 80px;
     border-color: var(--title-span);
+}
+
+.mustache-man {
+    display: flex;
+    position: relative;
+    align-self: center;
+}
+
+.mustache-man img {
+    width: 100%;
+    max-width: 150px;
+    border: none;
+    border-radius: 300px;
 }
