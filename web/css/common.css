@@ -86,3 +86,24 @@ header nav a:hover {
     text-transform: uppercase;
     align-self: center;
 }
+
+.details-banner-title {
+    background-image: url('../images/news_intro_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 337px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-banner-title h1 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: var(--title);
+    margin: 0;
+}
