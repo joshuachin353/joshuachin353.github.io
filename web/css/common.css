@@ -40,6 +40,7 @@ header nav a {
     line-height: 34px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 header nav a:hover {
@@ -48,10 +49,35 @@ header nav a:hover {
 }
 
 .hero-section-title {
-    font-family: "Roboto Slab Light", serif;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    top: -1200px;
+}
+
+.hero-section-title h1 {
+    font-family: "Roboto Slab", serif;
     font-size: 48px;
     line-height: 67.2px;
     letter-spacing: 1px;
     font-weight: 300;
+    text-align: center;
     color: var(--title);
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.hero-section-title span {
+    font-family: "Roboto Slab", serif;
+    font-size: 48px;
+    line-height: 67.2px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--title-span);
+    text-transform: uppercase;
+    align-self: center;
+    padding: 0 15px;
 }
