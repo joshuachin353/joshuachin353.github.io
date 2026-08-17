@@ -13,11 +13,14 @@
     position: relative;
 }
 
+.field {
+    height: 200px;
+}
 
 .field img {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
     position: relative;
 }
@@ -35,4 +38,18 @@
 .logo img {
     width: 175px;
     align-self: center;
+}
+
+.hero-section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 30px 30px;
+    border-color: var(--title-span);
+}
+
+hr {
+    width: 200px;
+    border-color: var(--title-span);
 }
