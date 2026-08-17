@@ -205,6 +205,16 @@ blockquote p {
     color: var(--title-span);
 }
 
+.footer-page-summary-title {
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 3px;
+    color: var(--title-span);
+}
+
+
 .story-details-meta-bar {
     width: 1200px;
     max-width: 100%;
