@@ -111,3 +111,17 @@ header nav a:hover {
     color: var(--title);
     margin: 0;
 }
+
+.story-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.story-details-img {
+    width: 1200px;
+    height: 650px;
+    max-width: 100%;
+    object-fit: cover;
+}
