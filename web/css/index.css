@@ -54,7 +54,10 @@
     margin: 30px 30px;
 }
 
-hr {
+.hero-hr hr {
+    display: flex;
+    position: relative;
+    align-content: center;
     width: 200px;
     border-color: var(--title-span);
 }
@@ -87,14 +90,13 @@ hr {
 
 .testimonial img {
     position: relative;
-    width: 100%;
+    max-width: 100%;
 }
 
 .testimonial-title {
     display: flex;
     align-self: center;
     position: absolute;
-    padding: 30px;
 }
 
 .testimonial-title h2 {
@@ -104,4 +106,13 @@ hr {
     letter-spacing: 3px;
     font-weight: 300;
     color: var(--title);
+    margin: 100px;
+}
+
+.testimonial-hr hr {
+    display: flex;
+    position: relative;
+    align-self: center;
+    width: 80px;
+    border-color: var(--title-span);
 }
