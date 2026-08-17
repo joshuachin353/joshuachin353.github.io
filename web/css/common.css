@@ -60,7 +60,6 @@ header nav a:hover {
     height: 337px;
     margin: 30px 30px;
     padding: 30px 30px;
-
 }
 
 .hero-section-title h1 {
@@ -130,4 +129,21 @@ header nav a:hover {
     letter-spacing: 1px;
     text-align: center;
     color: var(--body-text);
+}
+
+.story-content-grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.story-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
