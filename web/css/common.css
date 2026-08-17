@@ -131,6 +131,15 @@ header nav a:hover {
     color: var(--body-text);
 }
 
+.paragraph-text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: var(--body-text);
+}
+
 .story-content-grid {
     width: 1200px;
     max-width: 100%;
