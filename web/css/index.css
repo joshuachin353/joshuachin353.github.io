@@ -1,72 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 .leaves {
-    display: block;
     position: relative;
-    width: 100%;
-    height: 1476px;
-
+    padding-top: 80px;
+    height: 80vh;
+    max-width: 1440px;
+    min-height: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .leaves img {
-    display: flex;
     width: 100%;
-    position: absolute;
+    height: 100%;
     object-fit: cover;
 }
 
-.beer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.leaves .beer {
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    padding-top: 510px;
+    max-width: 1440px;
+    z-index: 2;
 }
-
 
 .beer img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: contain;
 }
 
 .field {
-    height: 200px;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .field img {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    justify-content: center;
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    position: relative;
-    align-self: center;
-    padding: 30px 30px;
-    top: -1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .logo img {
     width: 175px;
-    align-self: center;
+    height: auto;
 }
 
 .hero-section-title {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    margin: 30px 30px;
+    text-align: center;
+    margin: 20px 30px;
 }
 
 .hero-hr hr {
@@ -77,42 +68,41 @@
 }
 
 .hero-subtext {
-    display: flex;
-    width: 557px;
+    width: 100%;
+    max-width: 557px;
     text-align: center;
-    align-self: center;
+    margin-top: 20px;
+    color: var(--title);
 }
 
 .craft-beer {
+    width: 100%;
+    max-width: 1840px;
     display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    position: relative;
-    align-self: center;
-    bottom: -50px;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 .craft-beer img {
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .testimonial {
+    position: relative;
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    bottom: -1500px;
-}
-
-.testimonial img {
-    position: relative;
-    max-width: 100%;
+    align-items: center;
+    z-index: 3;
 }
 
 .testimonial-title {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    position: absolute;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .testimonial-title h2 {
@@ -122,35 +112,33 @@
     letter-spacing: 3px;
     font-weight: 300;
     color: var(--title);
-    margin: 100px;
-    text-align: center;
 }
 
 .testimonial-hr hr {
     width: 80px;
     border: none;
     border-top: 1px solid var(--title-span);
-    margin: 25px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
+/* Author Avatar Wrapper */
 .mustache-man {
     display: flex;
-    position: relative;
-    align-self: center;
+    justify-content: center;
+    margin-bottom: 25px;
 }
 
 .mustache-man img {
-    width: 100%;
-    max-width: 150px;
-    border: none;
-    border-radius: 300px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .testimonial-quote {
-    display: flex;
-    position: relative;
-    align-self: center;
-    margin-top: 20px;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .testimonial-quote span {
@@ -165,16 +153,15 @@
 
 .testimonial-subtitle {
     display: flex;
-    position: relative;
-    align-self: center;
-    gap: 5px;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
 }
 
 .testimonial-subtitle span {
     font-family: "Roboto Condensed", serif;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 16px;
     letter-spacing: 2px;
     font-weight: 400;
     color: var(--title-span);
@@ -182,10 +169,13 @@
 
 .testimonial-subtitle a {
     font-family: "Roboto Condensed", serif;
-    font-size: 18px;
-    line-height: 34px;
+    font-size: 16px;
     letter-spacing: 2px;
     font-weight: 300;
     color: var(--title-span);
     text-decoration: none;
+}
+
+.testimonial-subtitle a:hover {
+    text-decoration: underline;
 }
