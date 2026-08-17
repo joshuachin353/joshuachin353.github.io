@@ -51,10 +51,10 @@ header nav a:hover {
 .hero-section-title {
     display: flex;
     flex-direction: column;
-    position: relative;
-    align-content: center;
     justify-content: center;
+    position: relative;
     top: -1200px;
+    height: 337px;
 }
 
 .hero-section-title h1 {
