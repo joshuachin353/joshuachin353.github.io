@@ -10,6 +10,10 @@
     --title-span: #917852;
     --body-text: #afafaf;
     --button-color: #2b2b2b;
+    --placeholder-text: #666666;
+    --event-details-venue-link: #f2f2f2;
+    --sub-menu-background-color: #333333;
+    --ourstory-background: #121212;
 }
 
 body {
