@@ -59,3 +59,16 @@ hr {
     height: 102px;
     align-self: center;
 }
+
+.craft-beer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    position: relative;
+    align-self: center;
+    bottom: -50px;
+}
+
+.craft-beer img {
+    width: 100%;
+}
