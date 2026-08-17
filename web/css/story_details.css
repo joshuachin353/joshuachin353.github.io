@@ -71,22 +71,19 @@
     letter-spacing: 0px;
 }
 
-.story-details-meta-bar {
+.social-share-section {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
-    padding: 15px 0;
-    border-top: 1px solid var(--title-span);
-    border-bottom: 1px solid var(--title-span);
-    color: var(--title-span);
+    padding: 40px 0;
 }
 
-.story-details-meta-bar span {
-    display: inline-block;
-    margin-right: 20px;
+.social-share-section h2 {
     font-family: "Roboto Slab", serif;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 22.5px;
+    font-size: 19px;
+    line-height: 28.5px;
     letter-spacing: 0px;
+    color: var(--title);
+    margin: 0;
 }
