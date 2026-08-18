@@ -82,3 +82,18 @@ hr {
     margin: 30px;
     border-color: #917852;
 }
+
+.hero-subtext {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: -500px;
+}
+
+.hero-subtext p {
+    width: 510px;
+    margin: 0 450px;
+    align-items: center;
+}
