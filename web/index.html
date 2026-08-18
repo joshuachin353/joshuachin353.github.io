@@ -22,7 +22,6 @@
         </nav>
     </header>
 
-    <!-- 2. HERO / LEAVES BANNER -->
     <section class="leaves">
         <img src="images/leaves_background.jpg" alt="Leaves Background">
         <div class="beer">
@@ -30,7 +29,6 @@
         </div>
     </section>
 
-    <!-- 3. BRAND INTRODUCTION -->
     <section class="field">
         <img src="images/intro_bg.jpg" alt="Dark wood texture background">
         <div class="logo">
@@ -55,7 +53,6 @@
         </div>
     </section>
 
-    <!-- 4. TESTIMONIALS -->
     <section class="testimonial">
         <div>
             <img src="images/wheat_field.jpg" alt="Wheat field silhouette background">
@@ -79,7 +76,6 @@
         </div>
     </section>
 
-    <!-- 5. NEW: QUALITY HOPS USP SECTION -->
     <section class="usp-section quality-hops">
         <div class="container">
             <h2>Quality Hops</h2>
@@ -90,7 +86,6 @@
         </div>
     </section>
 
-    <!-- 6. NEW: NATURAL FLAVORS USP SECTION -->
     <section class="usp-section natural-flavors">
         <div class="container">
             <h2>Natural Flavors</h2>
@@ -101,7 +96,7 @@
         </div>
     </section>
 
-    <!-- 7. NEW: UNIQUE TASTE USP SECTION -->
+
     <section class="usp-section unique-taste">
         <div class="container">
             <h2>Unique Taste</h2>
@@ -112,7 +107,7 @@
         </div>
     </section>
 
-    <!-- 8. NEW: NEWSLETTER SUBSCRIPTION -->
+
     <section class="newsletter">
         <div class="container">
             <h2>Our Newsletter</h2>
@@ -124,8 +119,6 @@
             </form>
         </div>
     </section>
-
-    <!-- 9. NEW: MULTI-COLUMN SITE FOOTER -->
     <footer>
         <div class="footer-container">
             <!-- Left Column: Quick About -->
@@ -136,7 +129,7 @@
                 <a href="our-story.html" class="read-more">Read More</a>
             </div>
 
-            <!-- Center Column: Logo & Main Details -->
+
             <div class="footer-col brand-col">
                 <img src="images/beer_logo.png" alt="Avada Craft Beer Footer Logo" class="footer-logo">
                 <p class="address">123 Brew Lane, London, UK</p>
@@ -144,7 +137,7 @@
                 <a href="mailto:info@avadacraftbeers.com" class="footer-email">info@avadacraftbeers.com</a>
             </div>
 
-            <!-- Right Column: Navigation Links -->
+
             <div class="footer-col links-col">
                 <h3>Navigation</h3>
                 <ul>
@@ -157,7 +150,7 @@
             </div>
         </div>
 
-        <!-- Bottom Copyright Block -->
+
         <div class="footer-bottom">
             <p>&copy; Copyright 2026 Avada Craft Beers | All Rights Reserved</p>
             <div class="social-icons">
@@ -168,5 +161,25 @@
         </div>
     </footer>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+<script>
+    gsap.to(".beer", {
+        scrollTrigger: {
+            trigger: ".beer",
+            start: "center" /* target, screen*/,
+            scrub: true,
+            opacity: 1
+        },
+        x: -200, // move 200px to the right
+        opacity: 0, // fade to 50% opacity
+        duration: 1.5, // 1.5 seconds
+        ease: "power2.out"
+    });
+</script>
+
+
 
 </html>
