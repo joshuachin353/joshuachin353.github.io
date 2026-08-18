@@ -7,7 +7,7 @@
     padding-top: 80px;
     height: 80vh;
     max-width: 1440px;
-    min-height: 1400px;
+    min-height: 1412px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -51,7 +51,7 @@
 
 .logo {
     position: absolute;
-    bottom: 60%;
+    bottom: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -65,7 +65,7 @@
 }
 
 .hero-section-title {
-    bottom: 700px;
+    bottom: 850px;
     position: relative;
     z-index: 2;
 }
@@ -84,7 +84,7 @@
     max-width: 557px;
     text-align: center;
     margin: 0 auto 40px auto;
-    bottom: 700px;
+    bottom: 850px;
     z-index: 2;
 }
 
@@ -93,8 +93,8 @@
     display: block;
     z-index: 5;
     width: 100%;
-    max-width: 520px;
-    bottom: 700px;
+    max-width: 709px;
+    bottom: 860px;
     margin: 40px auto 0 auto;
 }
 
@@ -102,4 +102,77 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.testimonial img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.testimonial-title {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-title h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--title);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.testimonial-hr hr {
+    width: 100px;
+    margin: 0 auto 30px auto;
+    border: none;
+    border-top: 1px solid var(--title-span);
+}
+
+.mustache-man img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--title-span);
+    margin-bottom: 25px;
+}
+
+.testimonial-quote blockquote {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--title);
+    border: none;
+    margin: 0 0 20px 0;
+}
+
+.testimonial-subtitle {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    color: var(--body-text);
+}
+
+.testimonial-subtitle span {
+    color: var(--title-span);
+}
+
+.testimonial-subtitle a {
+    color: var(--event-details-venue-link);
+    text-decoration: none;
 }
