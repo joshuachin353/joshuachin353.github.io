@@ -273,3 +273,68 @@ hr {
     margin-top: 40px;
     width: 100%;
 }
+
+.flex-container {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid #afafaf50;
+}
+
+.flex-box {
+    background-color: #000000;
+}
+
+.flex-box-grey {
+    background-color: #060606;
+}
+
+.flex-box-light-grey {
+    background-color: #090909;
+}
+
+.flex-box,
+.flex-box-grey,
+.flex-box-light-grey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 452px;
+    justify-content: center;
+    border: 1px solid #afafaf50;
+    padding: 75px 45px 45px 50px;
+}
+
+.flex-box h2,
+.flex-box-grey h2,
+.flex-box-light-grey h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+}
+
+.flex-box p,
+.flex-box-grey p,
+.flex-box-light-grey p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 1px;
+    color: #afafaf;
+    margin-top: 20px;
+    margin-bottom: 0;
+}

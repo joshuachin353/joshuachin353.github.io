@@ -23,16 +23,12 @@
     overflow-x: hidden;
 }
 
-html,
-body {
-    background-color: var(--background-color);
-}
-
 header {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px 30px;
+    background-color: var(--background-color);
 }
 
 nav {
