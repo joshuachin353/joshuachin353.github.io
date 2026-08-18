@@ -113,3 +113,20 @@ hr {
     width: 70%;
     object-fit: cover;
 }
+
+.wheat {
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    background: url('images/wheat_field.jpg') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wheat img {
+    width: 100%;
+    object-fit: cover;
+}
