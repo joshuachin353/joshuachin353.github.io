@@ -40,13 +40,12 @@
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
-    z-index: 1;
 }
 
 .field img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
 }
 
 .logo {
@@ -65,7 +64,7 @@
 }
 
 .hero-section-title {
-    bottom: 850px;
+    bottom: 800px;
     position: relative;
     z-index: 2;
 }
@@ -84,7 +83,7 @@
     max-width: 557px;
     text-align: center;
     margin: 0 auto 40px auto;
-    bottom: 850px;
+    bottom: 800px;
     z-index: 2;
 }
 
@@ -94,7 +93,7 @@
     z-index: 5;
     width: 100%;
     max-width: 709px;
-    bottom: 860px;
+    bottom: 800px;
     margin: 40px auto 0 auto;
 }
 
@@ -105,11 +104,16 @@
 }
 
 .testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
     position: relative;
     max-width: 1440px;
+    height: 741px;
     margin: 0 auto;
     text-align: center;
-    padding: 80px 20px;
+    bottom: 650px;
 }
 
 .testimonial img {
@@ -134,7 +138,8 @@
     font-weight: 300;
     color: var(--title);
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 180px;
 }
 
 .testimonial-hr hr {
@@ -142,15 +147,26 @@
     margin: 0 auto 30px auto;
     border: none;
     border-top: 1px solid var(--title-span);
+    margin-top: 20px;
+    order: 2;
+}
+
+.mustache-man {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    order: 1;
 }
 
 .mustache-man img {
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--title-span);
-    margin-bottom: 25px;
+    border: none;
+    margin: 100px auto;
+
 }
 
 .testimonial-quote blockquote {
