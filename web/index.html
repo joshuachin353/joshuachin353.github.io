@@ -15,82 +15,91 @@
             <a href="index.html">Home</a>
             <a href="ourbeers.html">Our Beers</a>
             <a href="event.html">Events</a>
-            <a href="index.html"><img src="images/beer_logo.png" alt="Beer Logo"></a>
+            <a href="index.html"><img src="images/header_beer_logo.png" alt="Beer Logo"></a>
             <a href="our-story.html">Our Story</a>
             <a href="news.html">News</a>
             <a href="find-us.html">Find Us</a>
         </nav>
     </header>
-    <section>
-        <div class="leaves-bg">
-            <img src="images/leaves_background.jpg">
-        </div>
 
-        <div class="beer">
-            <img src="images/beer-on-table.jpg">
-        </div>
-    </section>
-
-    <section>
-        <div class="field">
-            <img src="images/intro_bg.jpg">
-        </div>
-
-        <div class="logo">
-            <img src="images/body_logo.png">
-        </div>
-
-        <div class="hero-section-title">
-            <div>
-                <h1><span>Avada Craft Beers</span>
-                    used With <span>Rare</span>
-                    <span>Ingredients</span>
-                    From Around The World
-                </h1>
+    <main>
+        <!-- Section 1: Intro Parallax / Split Section -->
+        <section class="hero-split-section">
+            <div class="leaves-bg">
+                <img src="images/leaves_background.jpg" alt="Leaves Background">
             </div>
-            <div>
+            <div class="beer">
+                <img src="images/beer-on-table.jpg" alt="Beer on Table">
+            </div>
+        </section>
+
+        <!-- Section 2: Craft Beer Details -->
+        <section class="hero-details-section">
+            <div class="field">
+                <img src="images/intro_bg.jpg" alt="Field Background">
+            </div>
+            <div class="logo">
+                <img src="images/body_logo.png" alt="Body Logo">
+            </div>
+            <!-- Added container wrapper to fix text alignment issues -->
+            <div class="hero-text-container">
+                <div class="hero-section-title">
+                    <h1><span>Avada Craft Beers</span> brewed with <span>Rare</span> <span>Ingredients</span> from
+                        around the world</h1>
+                    <hr>
+                </div>
+                <div class="hero-subtext">
+                    <p>Avada Beer represents a specialized line of craft ales. Avada craft drinks focus on mixed
+                        flavored ales made with local ingredients for a distinct taste.</p>
+                </div>
+            </div>
+            <div class="craft-beer">
+                <img src="images/beers_home.png" alt="Craft Beer Bottles Lineup">
+            </div>
+        </section>
+
+        <!-- Section 3: Bottom Showcase -->
+        <section class="wheat-section">
+            <div class="wheat">
+                <img src="images/wheat_field.jpg" alt="Wheat Field">
+            </div>
+            <div class="testimonial">
+                <h2>What People Are Saying</h2>
                 <hr>
+                <div class="testimonial-avatar">
+                    <img src="images/mustache_man.jpg" alt="Testimonial User">
+                </div>
+                <!-- FIX: Cleaned up the class name conflict -->
+                <div class="testimonial-quote">
+                    <p>These are the best craft beers I've ever tasted. Tangy is my favourite but my wife loves Aroma.
+                    </p>
+                    <span>John Smith,</span> <a href="">London</a>
+                    <div class="testimonial-dot">
+                        <div class="circle active"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-subtext">
-            <p>Avada Beer represents a specialized line of craft ales. Avada craft drinks focus on mixed flavored
-                ales made with local ingredients for a distinct taste.</p>
-        </div>
-        <div class="craft-beer">
-            <img src="images/beers_home.png">
-        </div>
-    </section>
-
-    <section>
-        <div class="wheat">
-            <img src="images/wheat_field.jpg">
-        </div>
-
-        
-    </section>
-
+        </section>
+    </main>
 
     <footer>
         <div class="footer-main">
             <div class="footer-grid">
                 <div class="footer-col footer-about">
                     <h3>ABOUT US</h3>
-                    <p>
-                        Avada Craft Beers are a range of intensely mixed unique flavoured ales fused with locally
-                        sourced
-                        ingredients, giving our beers a unique taste...
-                    </p>
+                    <p>Avada Craft Beers are a range of intensely mixed unique flavoured ales fused with locally sourced
+                        ingredients, giving our beers a unique taste...</p>
                     <a href="our-story.html" class="footer-btn">READ MORE</a>
                 </div>
-
                 <div class="footer-col footer-center">
-                    <img src="images/beer_logo.png" alt="Craft Beer Logo" class="footer-logo">
+                    <img src="images/header_beer_logo.png" alt="Craft Beer Logo" class="footer-logo">
                     <p>50 BURLEIGH ST</p>
                     <p>COVENT GARDEN</p>
                     <p>LONDON</p>
                     <a href="find-us.html" class="footer-btn">CONTACT US</a>
                 </div>
-
                 <div class="footer-col footer-nav">
                     <a href="ourbeers.html">OUR BEERS</a>
                     <a href="event.html">EVENTS</a>
@@ -100,13 +109,9 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-sub">
             <p>© 2012 - 2026 • <span>Avada</span> is a <span>Website Builder</span> for <span>WordPress</span> and
-                <span>eCommerce</span> • All
-                Rights Reserved
-                • Developed
-                by <span>ThemeFusion</span>
+                <span>eCommerce</span> • All Rights Reserved • Developed by <span>ThemeFusion</span>
             </p>
             <div class="footer-social-icons">
                 <a href="#"><img src="images/x-twitter-icon.png" alt="X"></a>
@@ -116,14 +121,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- GSAP Animation Engine Plugins -->
+    <script src="https://jsdelivr.net"></script>
+    <script src="https://jsdelivr.net"></script>
+    <script src="https://jsdelivr.net"></script>
+    <script>
+        // Your custom GSAP JavaScript goes here
+    </script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
-<script>
-</script>
-
-
 
 </html>
