@@ -199,15 +199,18 @@
     <script src="js/common.js"></script>
 
     <script>
-        gsap.from(".story-col", {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".related-post-card", {
             scrollTrigger: {
-                trigger: ".story-content-grid",
-                start: "top center",
+                trigger: ".related-posts-grid",
+                start: "top 80%",
             },
             y: 40,
             opacity: 0,
             duration: 1,
-            ease: "power2.in"
+            stagger: 0.5,
+            ease: "power2.out"
         });
     </script>
 </body>
