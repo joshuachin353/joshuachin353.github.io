@@ -5,12 +5,9 @@
 .leaves-bg {
     position: relative;
     width: 1440px;
-    height: 90vh;
-    background: url('images/leaves_background.jpg') no-repeat center;
-    background-size: cover;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -19,6 +16,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 
 .beer {
     position: relative;
@@ -36,12 +34,10 @@
     position: relative;
     width: 1440px;
     height: 100%;
-    background: url('images/intro_bg.jpg') no-repeat center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
+    order: 2;
 }
 
 .field img {
@@ -50,23 +46,24 @@
 }
 
 .logo {
-    position: absolute;
+    position: relative;
     width: 175px;
     height: 174px;
     display: flex;
     flex-direction: column;
     align-content: center;
     left: 44%;
-    margin-top: -1100px;
+    bottom: 1100px;
 }
 
 .hero-section-title {
     width: 100%;
+    max-width: 700px;
     align-items: center;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    margin-top: -850px;
+    bottom: 1080px;
+    left: 25%;
 }
 
 
@@ -77,23 +74,26 @@
 }
 
 hr {
+    position: relative;
+    left: 10%;
     width: 200px;
     margin: 30px;
     border-color: #917852;
 }
 
 .hero-subtext {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: -500px;
+    bottom: 1100px;
 }
 
 .hero-subtext p {
+    position: relative;
     width: 510px;
-    margin: 0 450px;
+    left: 450px;
     align-items: center;
 }
 
@@ -101,32 +101,29 @@ hr {
     display: flex;
     flex-direction: column;
     width: 709px;
-    position: absolute;
+    position: relative;
     z-index: 2;
-    margin-top: -350px;
-    margin-left: 33%;
-    margin-right: 33%;
     justify-content: center;
+    left: 29%;
+    bottom: 1000px;
 }
 
 .craft-beer img {
-    width: 70%;
+    width: 85%;
     object-fit: cover;
 }
 
 .wheat {
     position: relative;
     width: 1440px;
-    height: 100%;
-    background: url('images/wheat_field.jpg') no-repeat center;
-    background-size: cover;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
+    top: 20px;
 }
 
 .wheat img {
-    width: 100%;
+    min-height: 50%;
     object-fit: cover;
 }
