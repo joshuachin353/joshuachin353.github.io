@@ -12,18 +12,40 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="ourbeers.html">Our Beers</a>
-            <a href="event.html">Events</a>
-            <a href="index.html"><img src="images/header_beer_logo.png" alt="Beer Logo"></a>
-            <a href="our-story.html">Our Story</a>
-            <a href="news.html">News</a>
-            <a href="find-us.html">Find Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourbeers.html">Our Beers</a></li>
+                <li class="sub-menu"><a href="events.html" class="sub-menu-btn">Events</a>
+                    <div class="sub-menu-content">
+                        <a href="eventdetails.html">Event Details</a>
+                    </div>
+                </li>
+                <li class="logo">
+                    <a href="index.html"><img src="images/header_beer_logo.png" alt="Logo"></a>
+                </li>
+                <li class="sub-menu"><a href="ourstory.html" class="sub-menu-btn">Our Story</a>
+                    <div class="sub-menu-content">
+                        <a href="storydetails.html">Story Details</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="ourbrewery.html">Our Brewery</a>
+                    </div>
+                </li>
+                <li class="sub-menu"><a href="news.html" class="sub-menu-btn">News</a>
+                    <div class="sub-menu-content">
+                        <a href="newsdetails.html">News Details</a>
+                    </div>
+                </li>
+                <li class="sub-menu"><a href="find-us.html" class="sub-menu-btn">Find Us</a>
+                    <div class="sub-menu-content">
+                        <a href="faq.html">FAQ</a>
+
+                    </div>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Section 1: Intro Parallax / Split Section -->
         <section class="hero-split-section">
             <div class="leaves-bg">
                 <img src="images/leaves_background.jpg" alt="Leaves Background">
@@ -33,7 +55,6 @@
             </div>
         </section>
 
-        <!-- Section 2: Craft Beer Details -->
         <section class="hero-details-section">
             <div class="field">
                 <img src="images/intro_bg.jpg" alt="Field Background">
@@ -41,7 +62,7 @@
             <div class="logo">
                 <img src="images/body_logo.png" alt="Body Logo">
             </div>
-            <!-- Added container wrapper to fix text alignment issues -->
+
             <div class="hero-text-container">
                 <div class="hero-section-title">
                     <h1><span>Avada Craft Beers</span> brewed with <span>Rare</span> <span>Ingredients</span> from
@@ -58,7 +79,6 @@
             </div>
         </section>
 
-        <!-- Section 3: Bottom Showcase -->
         <section class="wheat-section">
             <div class="wheat">
                 <img src="images/wheat_field.jpg" alt="Wheat Field">
@@ -69,7 +89,6 @@
                 <div class="testimonial-avatar">
                     <img src="images/mustache_man.jpg" alt="Testimonial User">
                 </div>
-                <!-- FIX: Cleaned up the class name conflict -->
                 <div class="testimonial-quote">
                     <p>These are the best craft beers I've ever tasted. Tangy is my favourite but my wife loves Aroma.
                     </p>
@@ -114,7 +133,7 @@
             </div>
             <form class="newsletter-form" onsubmit="event.preventDefault();">
                 <input type="email" placeholder="Email Address *" required aria-label="Email Address">
-                <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+                <button type="submit" class="newsletter-btn">Submit</button>
             </form>
 
         </section>
