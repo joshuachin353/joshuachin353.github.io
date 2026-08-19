@@ -424,3 +424,64 @@ hr {
     background-color: #000000;
     color: #917852;
 }
+
+@media (max-width: 800px) {
+    .hero-details-section {
+        padding-top: 60px;
+    }
+
+    .craft-beer {
+        margin-top: 20px;
+        margin-bottom: -60px;
+    }
+
+    .wheat-section {
+        min-height: auto;
+        padding: 60px 20px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-box,
+    .flex-box-grey,
+    .flex-box-light-grey {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .newsletter-container {
+        padding: 40px 20px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input[type="email"],
+    .newsletter-btn {
+        width: 100%;
+    }
+
+    .testimonial h2,
+    .flex-box h2,
+    .flex-box-grey h2,
+    .flex-box-light-grey h2,
+    .newsletter-text h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .testimonial-quote p,
+    .flex-box p,
+    .flex-box-grey p,
+    .flex-box-light-grey p,
+    .newsletter-text p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 640px) {}
