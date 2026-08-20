@@ -429,13 +429,19 @@ hr {
         padding-top: 60px;
     }
 
-    .craft-beer {
-        margin-top: 20px;
-        margin-bottom: -60px;
+
+    .hero-section-title {
+        max-width: 400px;
+        margin-top: 40px;
+    }
+
+    .hero-subtext {
+        max-width: 400px;
+        margin-top: 40px;
     }
 
     .wheat-section {
-        min-height: auto;
+        min-height: 800px;
         padding: 60px 20px;
     }
 
@@ -480,6 +486,21 @@ hr {
     .newsletter-text p {
         font-size: 15px;
         line-height: 26px;
+    }
+
+    .testimonial h2 {
+        margin-top: 40px;
+    }
+
+    .flex-box p,
+    .flex-box-grey p,
+    .flex-box-light-grey p {
+        max-width: 500px;
+    }
+
+    .newsletter-container {
+        display: flex;
+        flex-direction: column;
     }
 }
 
