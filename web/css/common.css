@@ -568,12 +568,13 @@ footer {
     .footer-sub p {
         font-size: 13px;
         line-height: 1.6;
+        max-width: 650px;
     }
 
     .footer-social-icons {
         display: flex;
         justify-content: center;
-        gap: 25px;
+        gap: 15px;
     }
 
     .footer-social-icons i {
