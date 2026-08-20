@@ -1,0 +1,90 @@
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    padding: 40px 10px 10px;
+    ;
+}
+
+.hero-section-title {
+    min-height: 10vh;
+}
+
+.hero-section-title hr {
+    width: 200px;
+    margin: 30px auto;
+    border: none;
+    border-top: 2px solid #917852;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.hero-container {
+    position: relative;
+    background-color: black;
+    padding: 40px 40px;
+    align-content: center;
+}
+
+.hero-subtext {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
+    min-height: auto;
+    gap: 15px;
+}
+
+.hero-subtext p {
+    text-align: left;
+    width: 480px;
+    height: auto;
+}
+
+.barrel {
+    position: relative;
+    justify-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    max-width: 580px;
+}
+
+.barrel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.barrel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.drink {
+    position: relative;
+    top: -110px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 440px;
+    height: auto;
+}
+
+.drink img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

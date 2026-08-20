@@ -110,7 +110,7 @@ hr {
     width: 200px;
     margin: 30px auto;
     border: none;
-    border-top: 1px solid #917852;
+    border-top: 2px solid #917852;
 }
 
 .hero-subtext {
@@ -304,7 +304,7 @@ hr {
     text-align: center;
     width: 100%;
     max-width: 1440px;
-    min-height: 452px;
+    min-height: 593px;
     justify-content: center;
     border: 1px solid #222222;
     padding: 75px 45px 45px 50px;

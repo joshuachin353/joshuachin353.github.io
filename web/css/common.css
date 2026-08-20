@@ -191,7 +191,6 @@ li.sub-menu {
     font-size: 17px;
     line-height: 34px;
     letter-spacing: 1px;
-    text-align: center;
     color: var(--body-text);
 }
 
@@ -249,6 +248,7 @@ footer {
 .footer-main {
     background-image: url('../images/footer_background.jpg');
     background-size: cover;
+    background-color: var(--background-color);
     padding: 80px 0;
 }
 
