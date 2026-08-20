@@ -580,4 +580,19 @@ footer {
     .footer-social-icons i {
         font-size: 18px;
     }
+
+    .hero-section-title h1,
+    .hero-section-title span {
+        font-size: 38px;
+        line-height: 67.2px;
+        letter-spacing: 3px;
+    }
+
+    @media (max-width: 640px) {
+        .footer-sub p {
+            font-size: 13px;
+            max-width: 400px;
+            line-height: 38px;
+        }
+    }
 }
