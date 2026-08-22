@@ -419,8 +419,9 @@ hr {
 }
 
 .newsletter-btn:hover {
+    border: 1px solid #2b2b2b;
     background-color: #000000;
-    color: #917852;
+    color: #ffffff;
 }
 
 @media (max-width: 800px) {
@@ -477,7 +478,7 @@ hr {
     .flex-box-grey h2,
     .flex-box-light-grey h2,
     .newsletter-text h2 {
-        font-size: 22px;
+        font-size: 32px;
         line-height: 32px;
     }
 
@@ -570,5 +571,13 @@ hr {
     .flex-box-grey h2,
     .flex-box-light-grey h2 {
         font-size: 30px;
+        max-width: 300px;
+        line-height: 38px;
+    }
+
+    .flex-box p,
+    .flex-box-grey p,
+    .flex-box-light-grey p {
+        max-width: 350px;
     }
 }

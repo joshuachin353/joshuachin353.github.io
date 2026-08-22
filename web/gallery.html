@@ -116,8 +116,7 @@
                 </div>
             </div>
         </section>
-
-        <section class="hero-container">
+        <section class="drink-container">
             <div class="drink">
                 <img src="images/drinking_man.jpg">
             </div>
@@ -163,6 +162,31 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMobileMenu() {
+            const mobileDrawer = document.querySelector('.mb-sub-menu-bar');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (mobileDrawer) {
+                mobileDrawer.classList.toggle('active');
+            }
+
+            if (menuToggle) {
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-xmark');
+                }
+            }
+        }
+
+        function toggleAccordion(buttonElement) {
+            const parentAccordion = buttonElement.parentElement;
+            if (parentAccordion) {
+                parentAccordion.classList.toggle('open');
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -51,17 +51,19 @@
                 <a href="index.html">Home</a>
                 <a href="ourbeers.html">Our Beers</a>
 
+                <a href="events.html">Event</a>
                 <div class="mb-sub-menu">
-                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)">Events <i
+                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)"><i
                             class="fa-solid fa-chevron-down"></i></button>
+
                     <div class="mb-sub-menu-content">
                         <a href="eventdetails.html">Event Details</a>
                     </div>
                 </div>
 
-
+                <a href="ourstory.html">Our Story</a>
                 <div class="mb-sub-menu">
-                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)">Our Story <i
+                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)"><i
                             class="fa-solid fa-chevron-down"></i></button>
                     <div class="mb-sub-menu-content">
                         <a href="storydetails.html">Story Details</a>
@@ -69,18 +71,18 @@
                         <a href="ourbrewery.html">Our Brewery</a>
                     </div>
                 </div>
-
+                <a href="news.html">News</a>
                 <div class="mb-sub-menu">
-                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)">News <i
+                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)"><i
                             class="fa-solid fa-chevron-down"></i></button>
                     <div class="mb-sub-menu-content">
                         <a href="newsdetails.html">News Details</a>
                     </div>
                 </div>
 
-
+                <a href="find-us.html">Find Us</a>
                 <div class="mb-sub-menu">
-                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)">Find Us <i
+                    <button class="mb-sub-menu-btn" onclick="toggleAccordion(this)"><i
                             class="fa-solid fa-chevron-down"></i></button>
                     <div class="mb-sub-menu-content">
                         <a href="faq.html">FAQ</a>
@@ -218,10 +220,10 @@
                         href="#">ThemeFusion</a></span>
             </p>
             <div class="footer-social-icons">
-                <i class="fa-brands fa-x-twitter" style="color: #917852;"></i>
-                <i class="fa-brands fa-youtube" style="color: #917852;"></i>
-                <i class="fa-brands fa-facebook-f" style="color: #917852;"></i>
-                <i class="fa-brands fa-instagram" style="color: #917852;"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
     </footer>
@@ -231,7 +233,29 @@
     <script src="https://jsdelivr.net"></script>
     <script src="https://jsdelivr.net"></script>
     <script>
+        function toggleMobileMenu() {
+            const mobileDrawer = document.querySelector('.mb-sub-menu-bar');
+            const menuToggle = document.querySelector('.menu-toggle');
 
+            if (mobileDrawer) {
+                mobileDrawer.classList.toggle('active');
+            }
+
+            if (menuToggle) {
+                const icon = menuToggle.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-xmark');
+                }
+            }
+        }
+
+        function toggleAccordion(buttonElement) {
+            const parentAccordion = buttonElement.parentElement;
+            if (parentAccordion) {
+                parentAccordion.classList.toggle('open');
+            }
+        }
     </script>
 </body>
 

@@ -465,6 +465,8 @@ footer {
     }
 
     .mb-sub-menu {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
