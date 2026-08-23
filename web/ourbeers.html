@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="css/gallery.css">
+    <title>Home</title>
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="js/common.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
@@ -91,46 +91,6 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="logo">
-                <img src="images/body_logo.png" alt="Body Logo">
-            </div>
-
-            <div class="hero-text-container">
-                <div class="hero-section-title">
-                    <span>Our Gallery</span>
-                    <hr>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero-container">
-            <div class="hero-subtext">
-                <p>Welcome to Avada Beer Gallery, where craft brewing meets an exceptional sensory experience. Step
-                    into our carefully curated space and discover an impressive, rotating selection of local
-                    microbrews, rare international labels, and innovative seasonal releases chosen for both casual
-                    drinkers and passionate connoisseurs.
-                </p>
-                <div class="barrel">
-                    <img src="images/barrels.jpg">
-                </div>
-            </div>
-        </section>
-        <section class="drink-container">
-            <div class="drink">
-                <img src="images/drinking_man.jpg">
-            </div>
-            <div class="hero-subtext">
-                <p>Avada Craft Beer is an artisan line of intensely mixed, uniquely flavoured ales fused with locally
-                    sourced ingredients. Pouring with a rich, inviting hue, these beers boast a distinct character
-                    shaped by their unique combinations of regional elements. From options like a bold, full-bodied Red
-                    IPA packed with malt-forward flavours to a beautifully balanced toffee-caramel finish, each brew
-                    delivers an unforgettable tasting experience.
-                </p>
-            </div>
-        </section>
-    </main>
     <footer>
         <div class="footer-main">
             <div class="footer-grid">
@@ -164,38 +124,14 @@
                         href="#">ThemeFusion</a></span>
             </p>
             <div class="footer-social-icons">
-                <i class="fa-brands fa-x-twitter" style="color: #917852;"></i>
-                <i class="fa-brands fa-youtube" style="color: #917852;"></i>
-                <i class="fa-brands fa-facebook-f" style="color: #917852;"></i>
-                <i class="fa-brands fa-instagram" style="color: #917852;"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
     </footer>
-    <script>
-        function toggleMobileMenu() {
-            const mobileDrawer = document.querySelector('.mb-sub-menu-bar');
-            const menuToggle = document.querySelector('.menu-toggle');
-
-            if (mobileDrawer) {
-                mobileDrawer.classList.toggle('active');
-            }
-
-            if (menuToggle) {
-                const icon = menuToggle.querySelector('i');
-                if (icon) {
-                    icon.classList.toggle('fa-bars');
-                    icon.classList.toggle('fa-xmark');
-                }
-            }
-        }
-
-        function toggleAccordion(buttonElement) {
-            const parentAccordion = buttonElement.parentElement;
-            if (parentAccordion) {
-                parentAccordion.classList.toggle('open');
-            }
-        }
-    </script>
 </body>
+
 
 </html>
