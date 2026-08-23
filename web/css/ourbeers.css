@@ -1,0 +1,49 @@
+@import url('https://googleapis.com');
+@import url('https://googleapis.com');
+@import url('https://cdnfonts.com');
+
+.our-beers-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+}
+
+.beer-bg {
+    position: relative;
+    max-width: 1440px;
+    z-index: 1;
+}
+
+.beer-bg img {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+    border-bottom: 1px solid #917852;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    align-self: center;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-section-title h1 {
+    max-width: 550px;
+    text-align: center;
+}
+
+hr {
+    width: 250px;
+    align-self: center;
+    border: 1px solid #917852;
+    margin: 20px 0 10px 0;
+}
