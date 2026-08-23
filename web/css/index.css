@@ -2,6 +2,18 @@
 @import url('https://googleapis.com');
 @import url('https://cdnfonts.com');
 
+:root {
+    --background-color: #000000;
+    --title: #ffffff;
+    --title-span: #917852;
+    --body-text: #afafaf;
+    --button-color: #2b2b2b;
+    --placeholder-text: #666666;
+    --sub-menu-background-color: #333333;
+    --flex-box-grey: #080808;
+    --flex-box-light-gray: #101010;
+
+}
 
 .hero-split-section {
     position: relative;
@@ -103,7 +115,7 @@ hr {
     width: 200px;
     margin: 30px auto;
     border: none;
-    border-top: 2px solid #917852;
+    border-top: 2px solid var(--title-span);
 }
 
 .hero-subtext {
@@ -168,7 +180,6 @@ hr {
     text-align: center;
     width: 100%;
     max-width: 800px;
-    color: #ffffff;
 }
 
 .testimonial h2 {
@@ -185,7 +196,7 @@ hr {
     width: 100px;
     margin: 20px auto;
     border: none;
-    border-top: 1px solid #917852;
+    border-top: 1px solid var(--title-span);
 }
 
 .testimonial-avatar {
@@ -218,7 +229,7 @@ hr {
     line-height: 30px;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: var(--title);
 }
 
 .testimonial-quote span {
@@ -227,7 +238,7 @@ hr {
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 2px;
-    color: #917852;
+    color: var(--title-span);
     margin-top: 10px;
 }
 
@@ -237,7 +248,7 @@ hr {
     font-weight: 300;
     line-height: 34px;
     letter-spacing: 2px;
-    color: #917852;
+    color: var(--title-span);
     margin-top: 10px;
     text-decoration: none;
 }
@@ -245,7 +256,7 @@ hr {
 .circle {
     width: 10px;
     height: 10px;
-    border: 1px solid #917852;
+    border: 1px solid var(--title-span);
     border-radius: 50%;
     cursor: pointer;
     background-color: transparent;
@@ -254,7 +265,7 @@ hr {
 
 .circle.active,
 .circle:hover {
-    background-color: #917852;
+    background-color: var(--title-span);
 }
 
 .testimonial-dot {
@@ -273,19 +284,19 @@ hr {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 1px solid #222222;
+    border: 1px solid var(--button-color);
 }
 
 .flex-box {
-    background-color: #000000;
+    background-color: var(--background-color);
 }
 
 .flex-box-grey {
-    background-color: #080808;
+    background-color: var(--flex-box-grey);
 }
 
 .flex-box-light-grey {
-    background-color: #121212;
+    background-color: var(--flex-box-light-gray);
 }
 
 .flex-box,
@@ -299,7 +310,7 @@ hr {
     max-width: 1440px;
     min-height: 593px;
     justify-content: center;
-    border: 1px solid #222222;
+    border: 1px solid var(--button-color);
     padding: 75px 45px 45px 50px;
 }
 
@@ -311,7 +322,7 @@ hr {
     font-weight: 300;
     line-height: 42px;
     letter-spacing: 3px;
-    color: #ffffff;
+    color: var(--title);
     text-transform: uppercase;
     margin: 0;
     display: block;
@@ -325,7 +336,7 @@ hr {
     font-weight: 300;
     line-height: 34px;
     letter-spacing: 1px;
-    color: #afafaf;
+    color: var(--body-text);
     margin-top: 20px;
     margin-bottom: 0;
 }
@@ -334,7 +345,7 @@ hr {
     position: relative;
     z-index: 20;
     width: 100%;
-    background-color: #000000;
+    background-color: var(--background-color);
     padding: 50px 30px 30px 40px;
     display: flex;
     justify-content: center;
@@ -356,7 +367,7 @@ hr {
     font-weight: 300;
     line-height: 42px;
     letter-spacing: 3px;
-    color: #917852;
+    color: var(--title-span);
     text-transform: uppercase;
     margin: 0 0 15px 0;
 }
@@ -367,7 +378,7 @@ hr {
     font-weight: 300;
     line-height: 34px;
     letter-spacing: 1;
-    color: #666666;
+    color: var(--placeholder-text);
     margin: 0 0 40px 0;
 }
 
@@ -384,22 +395,22 @@ hr {
     flex: 1;
     background-color: transparent;
     padding: 14px 16px;
-    border: 1px solid #222222;
+    border: 1px solid var(--button-color);
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    color: #ffffff;
+    color: var(--title);
     outline: none;
     transition: border-color 0.3s ease;
 }
 
 .newsletter-form input[type="email"]:focus {
-    border-color: #917852;
+    border-color: var(--title-span);
 }
 
 .newsletter-btn {
     padding: 14px 40px;
-    background-color: #2b2b2b;
-    color: #917852;
+    background-color: var(--button-color);
+    color: var(--title-span);
     border: none;
     font-family: 'Roboto Slab', Serif;
     font-size: 14px;
@@ -412,9 +423,9 @@ hr {
 }
 
 .newsletter-btn:hover {
-    border: 1px solid #2b2b2b;
-    background-color: #000000;
-    color: #ffffff;
+    border: 1px solid var(--button-color);
+    background-color: var(--background-color);
+    color: var(--title);
 }
 
 @media (max-width: 800px) {
