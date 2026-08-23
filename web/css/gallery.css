@@ -83,3 +83,10 @@
 .drink img {
     width: 160%;
 }
+
+.drink-container .hero-subtext {
+    position: relative;
+    left: 30%;
+    max-width: 630px;
+
+}
