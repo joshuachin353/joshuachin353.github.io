@@ -1,6 +1,19 @@
-@import url('https://googleapis.com');
-@import url('https://googleapis.com');
-@import url('https://cdnfonts.com');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+
+.root {
+    --background-color: #000000;
+    --title: #ffffff;
+    --title-span: #917852;
+    --body-text: #afafaf;
+    --button-color: #2b2b2b;
+    --placeholder-text: #666666;
+    --sub-menu-background-color: #333333;
+}
 
 .our-beers-container {
     position: relative;
@@ -20,7 +33,7 @@
     width: 100%;
     object-fit: contain;
     height: auto;
-    border-bottom: 1px solid #917852;
+    border-bottom: 1px solid var(--title-span);
 }
 
 .hero-text-container {
@@ -32,7 +45,7 @@
     top: 10%;
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1440px;
 }
 
 .hero-section-title h1 {
@@ -43,7 +56,7 @@
 hr {
     width: 250px;
     align-self: center;
-    border: 1px solid #917852;
+    border: 1px solid var(--title-span);
     margin: 20px 0 10px 0;
 }
 
@@ -52,6 +65,7 @@ hr {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 1440px;
     min-height: 1440px;
 }
 
@@ -77,11 +91,59 @@ hr {
     position: relative;
     top: 200px;
     max-width: 1440px;
-    left: -40%;
+    align-self: center;
+    justify-self: center;
 }
 
 .product-banner img {
-    width: 250%;
+    display: block;
+    width: 100%;
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
+}
+
+.product-title {
+    position: relative;
+    align-self: flex-start;
+    top: -60px;
+    left: 20%;
+    max-width: 200px;
+}
+
+.product-title h1 {
+    color: #09566d;
+    font-family: "Roboto Slab" Arial, Helvetica, sans-serif;
+    font-size: 43px;
+    line-height: 67.2px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.product-title p {
+    color: var(--body-text);
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.product-description {
+    position: relative;
+    align-self: center;
+    top: -25px;
+    right: 24%;
+    max-width: 200px;
+}
+
+.product-description p {
+    color: var(--title);
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
 }
