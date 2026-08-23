@@ -52,18 +52,36 @@ hr {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 1200px;
+    min-height: 1440px;
 }
 
-.logo {
-    position: absolute;
+.body-logo {
+    position: relative;
     align-self: center;
-    top: 10%;
+    top: 40px;
     max-width: 150px;
 }
 
-.logo img {
+.body-logo img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.beer-product .hero-text-container {
+    position: absolute;
+    top: 20%;
+}
+
+.product-banner {
+    position: relative;
+    top: 200px;
+    max-width: 1440px;
+    left: -40%;
+}
+
+.product-banner img {
+    width: 250%;
+    height: auto;
+    object-fit: fill;
 }

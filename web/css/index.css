@@ -2,11 +2,6 @@
 @import url('https://googleapis.com');
 @import url('https://cdnfonts.com');
 
-main {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
 .hero-split-section {
     position: relative;
@@ -15,12 +10,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: visible;
 }
 
 .leaves-bg {
     width: 100%;
-    z-index: 1;
 }
 
 .leaves-bg img {
