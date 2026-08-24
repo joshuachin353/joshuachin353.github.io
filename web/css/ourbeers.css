@@ -13,6 +13,7 @@
     --button-color: #2b2b2b;
     --placeholder-text: #666666;
     --sub-menu-background-color: #333333;
+    --blue-button: #09566d;
 }
 
 .our-beers-container {
@@ -66,7 +67,10 @@ hr {
     flex-direction: column;
     width: 100%;
     max-width: 1440px;
-    min-height: 1440px;
+    justify-self: center;
+    min-height: 2000px;
+    overflow: hidden;
+
 }
 
 .body-logo {
@@ -87,42 +91,69 @@ hr {
     top: 20%;
 }
 
-.product-banner {
+.blue-banner {
     position: relative;
     top: 200px;
-    max-width: 1440px;
+    left: 20%;
+    max-width: 850px;
     align-self: center;
-    justify-self: center;
+    justify-items: center;
 }
 
-.product-banner img {
+.blue-banner img {
     display: block;
-    width: 100%;
+    width: 300%;
     height: auto;
     object-fit: cover;
 }
 
-.product-title {
+.green-banner {
     position: relative;
+    top: 1440px;
+    right: 50%;
+    max-width: 850px;
+    align-items: center;
+}
+
+.blue-banner img {
+    display: block;
+    width: 300%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blue-product-title {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -15%;
+    right: 110%;
     align-self: flex-start;
-    top: -60px;
-    left: 20%;
     max-width: 200px;
 }
 
-.product-title h1 {
+.green-banner .product-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1200px;
+    align-content: center;
+    max-width: 200px;
+}
+
+.blue-product-title h1 {
     color: #09566d;
-    font-family: "Roboto Slab" Arial, Helvetica, sans-serif;
-    font-size: 43px;
-    line-height: 67.2px;
+    font-family: "Roboto Slab", serif;
+    font-size: 48px;
+    line-height: 67.1px;
     letter-spacing: 3px;
     font-weight: 300;
     text-transform: uppercase;
 }
 
-.product-title p {
+.blue-product-title p {
     color: var(--body-text);
-    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 3px;
@@ -130,20 +161,68 @@ hr {
     text-transform: uppercase;
 }
 
-.product-description {
+.blue-product-description {
+    display: flex;
+    flex-direction: column;
     position: relative;
     align-self: center;
-    top: -25px;
-    right: 24%;
-    max-width: 200px;
+    top: -320px;
+    right: 72%;
+    max-width: 320px;
+    gap: 15px;
 }
 
-.product-description p {
+.blue-product-description span {
     color: var(--title);
-    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 20px;
+    font-weight: 300;
     line-height: 30px;
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.blue-product-description p {
+    color: var(--title);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.product-btn {
+    display: flex;
+    position: relative;
+    padding: 14px 40px;
+    background-color: #09566d;
+    color: var(--title);
+    border: none;
+    font-family: 'Roboto Slab', Serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    max-width: 200px;
+    align-self: center;
+}
+
+.blue-beer {
+    position: relative;
+    top: -500px;
+    right: 22%;
+    align-self: flex-end;
+    max-width: 500px;
+}
+
+.blue-beer img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
